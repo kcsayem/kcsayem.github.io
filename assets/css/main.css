@@ -1340,6 +1340,12 @@ ul.actions {
       width: 100%; }
 
 /* Icons */
+.icon {
+  width: 20px; /* Set the desired width */
+  height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+  display: block; /* Ensure the image behaves as a block element */
+}
+
 ul.icons {
   cursor: default;
   list-style: none;
