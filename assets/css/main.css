@@ -2280,9 +2280,21 @@ button,
 
 /* Misc */
 .image.object img {
-  height: 700px !important; /* Force the height to 50px */
+  height: 300px; /* Default height for larger screens */
   width: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Add rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+@media screen and (max-width: 768px) {
+  .image.object img {
+    height: 200px; /* Reduce height for tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image.object img {
+    height: 150px; /* Further reduce height for mobile devices */
+  }
 }
