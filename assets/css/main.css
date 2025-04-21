@@ -2277,3 +2277,12 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+/* Misc */
+.image.object img {
+  height: 700px !important; /* Force the height to 50px */
+  width: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
