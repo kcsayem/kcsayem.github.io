@@ -2280,21 +2280,75 @@ button,
 
 /* Misc */
 .image.object img {
-  height: 300px; /* Default height for larger screens */
-  width: auto; /* Maintain aspect ratio */
+  height: 240px; /* Default height for larger screens */
+  width: 100%;
+  object-fit: cover;
+  object-position: center 25%;
   border-radius: 10px; /* Add rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
+#banner .image.object {
+  width: 40%;
+  height: 620px;
+  min-height: 0;
+  max-height: none;
+}
+
+#banner .image.object img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
 @media screen and (max-width: 768px) {
+  #banner .image.object {
+    width: 42%;
+    margin: 0 auto 2.5em auto;
+    height: 210px;
+    min-height: 0;
+    max-height: none;
+  }
+
+  #banner .image.object img {
+    height: 100%;
+    object-position: center 25%;
+  }
+
   .image.object img {
-    height: 200px; /* Reduce height for tablets */
+    height: 210px; /* Reduce height for tablets */
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #banner .image.object {
+    width: 42%;
+    margin: 0 auto 2.5em auto;
+    height: 210px;
+    min-height: 0;
+    max-height: none;
+  }
+
+  #banner .image.object img {
+    height: 100%;
+    object-position: center 25%;
   }
 }
 
 @media screen and (max-width: 480px) {
+  #banner .image.object {
+    width: 56%;
+    height: 180px;
+    margin: 0 auto 2em auto;
+  }
+
+  #banner .image.object img {
+    height: 100%;
+    object-position: center 25%;
+  }
+
   .image.object img {
-    height: 150px; /* Further reduce height for mobile devices */
+    height: 180px; /* Further reduce height for mobile devices */
   }
 }
