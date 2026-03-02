@@ -1,0 +1,11 @@
+url: "https://kcsayem.github.io"
+title: "MD Khalequzzaman Chowdhury Sayem"
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - elements.html
+  - generic.html
+  - i_prev.html
+  - cv/cv.html
+  - blogs/
