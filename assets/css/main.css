@@ -2931,3 +2931,96 @@ button.primary:hover,
   text-align: justify;
   text-justify: inter-word;
 }
+
+/* Publication teaser layout */
+.publication-layout {
+  align-items: flex-start;
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+}
+
+.publication-media {
+  border: 0;
+  border-radius: 0.9rem;
+  box-shadow: 0 12px 28px rgba(20, 32, 51, 0.12);
+  display: block;
+  overflow: hidden;
+}
+
+.publication-media img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.publication-copy {
+  min-width: 0;
+}
+
+.publication-copy .publication-authors {
+  margin-top: 0;
+}
+
+.publication-copy .card-links {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 736px) {
+  .publication-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-media {
+    max-width: 100%;
+  }
+}
+
+/* Publication desktop rebalance */
+.publication-card > .publication-authors {
+  margin-bottom: 1.15rem;
+}
+
+.publication-layout {
+  align-items: start;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+}
+
+.publication-copy p:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .publication-layout {
+    grid-template-columns: minmax(180px, 230px) minmax(0, 1fr);
+  }
+}
+
+/* Lighter desktop teaser sizing */
+.publication-layout {
+  gap: 1rem;
+  grid-template-columns: minmax(170px, 220px) minmax(0, 1fr);
+}
+
+@media screen and (max-width: 980px) {
+  .publication-layout {
+    grid-template-columns: minmax(160px, 200px) minmax(0, 1fr);
+  }
+}
+
+/* Restore publication stack on mobile after desktop sizing tweaks */
+@media screen and (max-width: 736px) {
+  .publication-layout {
+    gap: 1rem;
+    grid-template-columns: 1fr !important;
+  }
+
+  .publication-media {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .publication-copy {
+    width: 100%;
+  }
+}
