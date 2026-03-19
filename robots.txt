@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kcsayem.github.io/sitemap.xml
