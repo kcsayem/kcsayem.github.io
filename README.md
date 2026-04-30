@@ -13,7 +13,7 @@
   <a href="https://kcsayem.github.io/">Homepage</a> •
   <a href="https://scholar.google.com/citations?user=dVrnq4kAAAAJ&hl">Google Scholar</a> •
   <a href="https://www.linkedin.com/in/kcsayem/">LinkedIn</a> •
-  <a href="mailto:khalequzzamansayem@unist.ac.kr">Email</a>
+  <a href="mailto:khalequzzamansayem@gmail.com">Email</a>
 </p>
 
 ---
@@ -80,4 +80,4 @@ I am always open to research discussions, collaborations, and exciting ideas in 
 - Homepage: [kcsayem.github.io](https://kcsayem.github.io/)
 - Google Scholar: [Profile](https://scholar.google.com/citations?user=dVrnq4kAAAAJ&hl)
 - LinkedIn: [kcsayem](https://www.linkedin.com/in/kcsayem/)
-- Email: [khalequzzamansayem@unist.ac.kr](mailto:khalequzzamansayem@unist.ac.kr)
+- Email: [khalequzzamansayem@gmail.com](mailto:khalequzzamansayem@gmail.com)
