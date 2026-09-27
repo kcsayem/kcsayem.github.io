@@ -3157,7 +3157,7 @@ h1, h2, h3, h4, h5, h6,
 .theme-toggle-icon::before {
   content: '\f185';
   display: inline-block;
-  font-family: 'Font Awesome 6 Free';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
 
@@ -3263,5 +3263,204 @@ html[data-theme="dark"] .publication-media img {
 
   #header .icons {
     gap: 0.35rem;
+  }
+}
+
+/* Research-focused homepage sections */
+#banner h1 {
+  font-size: 2.1em;
+  line-height: 1.15;
+  margin-bottom: 0.4em;
+}
+
+#banner header .research-statement {
+  color: var(--text-strong);
+  font-family: "Newsreader", serif;
+  font-size: 1.35em;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.45;
+  margin-top: 0;
+  text-transform: none;
+}
+
+.role-list {
+  list-style: none;
+  margin: 0 0 1.5em 0;
+  padding: 0;
+}
+
+.role-list li {
+  border-left: 3px solid var(--accent);
+  margin-bottom: 0.4em;
+  padding-left: 0.85em;
+}
+
+.role-list li.role-past {
+  border-left-color: var(--line-soft);
+  color: var(--text-muted);
+}
+
+.role-title {
+  color: var(--text-strong);
+  font-weight: 700;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-weight: 700;
+}
+
+.profile-links a {
+  border-bottom: 0;
+}
+
+.themes-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.theme-card h3 {
+  font-size: 1.2rem;
+}
+
+.theme-work {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.section-note {
+  color: var(--text-body);
+  margin: 1.4rem 0 0 0;
+}
+
+.section-lead {
+  font-size: 0.95rem;
+  margin: -0.4rem 0 1.2rem 0;
+}
+
+.research-section,
+.artifacts-section,
+.experience-section,
+.talks-section {
+  padding-top: 3.25em !important;
+  padding-bottom: 2.25em !important;
+}
+
+.author-role {
+  background: var(--accent);
+  border-radius: 999px;
+  color: var(--button-text);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.55rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.publication-tldr {
+  color: var(--text-strong);
+  font-weight: 600;
+}
+
+details.bibtex {
+  margin-top: 0.75rem;
+}
+
+details summary {
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+details.bibtex pre {
+  background: var(--surface-alt);
+  border: 1px solid var(--line-soft);
+  border-radius: 0.6rem;
+  color: var(--text-body);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin: 0.6rem 0 0 0;
+  overflow-x: auto;
+  padding: 0.9rem 1rem;
+  white-space: pre;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline li {
+  border-top: 1px solid var(--line-soft);
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  padding: 1rem 0;
+}
+
+.timeline li:first-child {
+  border-top: 0;
+}
+
+.timeline h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.timeline p {
+  margin: 0;
+}
+
+.timeline-date {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding-top: 0.2rem;
+  text-transform: uppercase;
+}
+
+.older-news {
+  margin-top: 1.5rem;
+}
+
+.site-footer {
+  border-top: 2px solid var(--line-soft);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  padding: 2rem 0 3rem 0;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .themes-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #banner h1 {
+    font-size: 1.75em;
+  }
+
+  #banner header .research-statement {
+    font-size: 1.15em;
+  }
+
+  #banner .content > p {
+    text-align: left;
+  }
+
+  .timeline li {
+    gap: 0.25rem;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
