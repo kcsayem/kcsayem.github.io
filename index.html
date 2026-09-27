@@ -23,8 +23,12 @@
 
 		<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 		<link rel="shortcut icon" href="assets/favicon.svg" />
-		<meta name="theme-color" content="#0b1220" />
-		<link rel="stylesheet" href="assets/css/main.css?v=20260927" />
+		<meta name="theme-color" content="#fbfbf9" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#0e131b" media="(prefers-color-scheme: dark)" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" />
+		<link rel="stylesheet" href="assets/css/site.css?v=20260927" />
 		<script src="assets/js/theme-init.js"></script>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMPVV9B3X3"></script>
@@ -67,362 +71,246 @@
 		}
 		</script>
 	</head>
-	<body class="is-preload">
+	<body>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56PDBT25"
 			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<div id="wrapper">
-			<div id="main">
-				<div class="inner">
-					<header id="header">
-						<a href="./" class="logo"><strong>Sayem</strong> · 3D Vision &amp; Multimodal AI</a>
-						<div class="header-actions">
-							<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="true">
-								<span class="theme-toggle-icon" aria-hidden="true"></span>
-								<span class="theme-toggle-text">Light mode</span>
-							</button>
-							<ul class="icons">
-							<li><a href="https://github.com/kcsayem" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://scholar.google.com/citations?user=dVrnq4kAAAAJ&amp;hl" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
-							<li><a href="https://www.linkedin.com/in/kcsayem/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:khalequzzamansayem@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</div>
-					</header>
 
-					<!-- Intro -->
-					<section id="banner">
-						<div class="content">
-							<header>
-								<h1>MD Khalequzzaman Chowdhury Sayem</h1>
-								<p class="research-statement">I work on 3D-aware vision and multimodal models that try to understand people: how their hands and bodies move, how they interact with objects, and how they behave over time.</p>
-							</header>
+		<header class="topbar">
+			<div class="wrap">
+				<a href="./" class="brand">Sayem</a>
+				<nav class="nav" aria-label="Sections">
+					<a href="#news">News</a>
+					<a href="#research">Research</a>
+					<a href="#publications">Publications</a>
+					<a href="#experience">Experience</a>
+					<a href="cv/CV.pdf">CV</a>
+					<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">
+						<svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+						<svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+					</button>
+				</nav>
+			</div>
+		</header>
 
-							<ul class="role-list">
-								<li><span class="role-title">3D AI Engineer</span> at <a href="https://www.liops.io/">LIOPS</a>, working on stereo depth estimation</li>
-								<li class="role-past">Previously: M.S. and Researcher, <a href="https://sites.google.com/site/bsrvision00/">Vision &amp; Learning Lab</a>, <a href="https://unist.ac.kr">UNIST</a></li>
-							</ul>
+		<main class="wrap">
+			<section class="intro">
+				<div>
+					<h1>MD Khalequzzaman Chowdhury Sayem</h1>
+					<p class="statement">I work on 3D-aware vision and multimodal models that try to understand people: how their hands and bodies move, how they interact with objects, and how they behave over time.</p>
+					<ul class="roles">
+						<li><strong>3D AI Engineer</strong> at <a href="https://www.liops.io/">LIOPS</a>, working on stereo depth estimation</li>
+						<li class="past">Previously: M.S. and Researcher, <a href="https://sites.google.com/site/bsrvision00/">Vision &amp; Learning Lab</a>, <a href="https://unist.ac.kr">UNIST</a></li>
+					</ul>
+					<p class="bio">Before this, I was fortunate to work with <a href="https://sites.google.com/site/bsrvision00/">Prof. Seungryul Baek</a> and <a href="https://sites.google.com/view/bbinod/home">Prof. Binod Bhattarai</a> at UNIST, where I completed my M.S. I'm always happy to chat about research or possible collaborations.</p>
+					<ul class="links">
+						<li><a class="primary" href="cv/CV.pdf"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>CV</a></li>
+						<li><a href="https://scholar.google.com/citations?user=dVrnq4kAAAAJ&amp;hl"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Google Scholar</a></li>
+						<li><a href="https://github.com/kcsayem"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a></li>
+						<li><a href="https://huggingface.co/kcsayem"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>Hugging Face</a></li>
+						<li><a href="https://www.linkedin.com/in/kcsayem/"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a></li>
+						<li><a href="mailto:khalequzzamansayem@gmail.com"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email</a></li>
+						<!-- TODO: add OpenReview and ORCID profile links -->
+					</ul>
+				</div>
+				<div class="portrait">
+					<picture>
+						<source srcset="images/img/profile/profile_1.webp" type="image/webp" />
+						<img src="images/img/profile/profile_1.jpg" width="800" height="1079" alt="Portrait of MD Khalequzzaman Chowdhury Sayem" />
+					</picture>
+				</div>
+			</section>
 
-							<p>
-							Before this, I was fortunate to work with
-							<a href="https://sites.google.com/site/bsrvision00/">Prof. Seungryul Baek</a>
-							and <a href="https://sites.google.com/view/bbinod/home">Prof. Binod Bhattarai</a>
-							at UNIST, where I completed my M.S. Together with my colleagues there, I worked on a benchmark for spatial reasoning about hands in VLMs (CVPR 2026),
-							a real-time Transformer for two-hand and object pose (AAAI 2025), and 3D Gaussian human avatars under partial visibility (ECCV 2026).
-							</p>
+			<section class="section" id="news">
+				<h2>News</h2>
+				<ul class="news">
+					<li><span class="date">Jun 2026</span><span><a href="https://yihalem1.github.io/FlexiAvatar/">FlexiAvatar</a> was accepted to ECCV 2026.</span></li>
+					<li><span class="date">May 2026</span><span>Joined <a href="https://www.liops.io/">LIOPS</a> as a 3D AI Engineer, working on stereo depth estimation.</span></li>
+					<li><span class="date">Mar 2026</span><span><a href="https://arxiv.org/pdf/2603.26362">HandVQA</a> is now on arXiv.</span></li>
+					<li><span class="date">Feb 2026</span><span>HandVQA was accepted to CVPR 2026.</span></li>
+				</ul>
+				<details class="more">
+					<summary>Older news</summary>
+					<ul class="news">
+						<li><span class="date">Sep 2025</span><span>Joined the UNIST Vision &amp; Learning Lab as a Researcher.</span></li>
+						<li><span class="date">Aug 2025</span><span>Defended my master's thesis and graduated from UNIST.</span></li>
+						<li><span class="date">2025</span><span>QORT-Former was accepted to AAAI 2025.</span></li>
+					</ul>
+				</details>
+			</section>
 
-							<p>
-							I'm always happy to chat about research or possible collaborations. Feel free to reach me at <a href="mailto:khalequzzamansayem@gmail.com">khalequzzamansayem@gmail.com</a>.
-							</p>
-							<ul class="actions">
-								<li><a href="cv/CV.pdf" class="button primary big">CV (PDF)</a></li>
-								<li><a href="https://scholar.google.com/citations?user=dVrnq4kAAAAJ&amp;hl" class="button big">Google Scholar</a></li>
-								<li><a href="https://github.com/kcsayem" class="button big">GitHub</a></li>
-							</ul>
-							<p class="profile-links">
-								<a href="https://huggingface.co/kcsayem">Hugging Face</a>
-								<a href="https://www.linkedin.com/in/kcsayem/">LinkedIn</a>
-								<!-- TODO: add OpenReview and ORCID profile links -->
-							</p>
-						</div>
-						<span class="image object">
-							<picture>
-								<source srcset="images/img/profile/profile_1.webp" type="image/webp" />
-								<img src="images/img/profile/profile_1.jpg" width="800" height="1079" alt="Portrait of MD Khalequzzaman Chowdhury Sayem" />
-							</picture>
-						</span>
-					</section>
+			<section class="section" id="research">
+				<h2>Research</h2>
+				<div class="themes">
+					<div class="theme">
+						<h3>Geometry-Grounded Multimodal Reasoning</h3>
+						<p>Using 3D geometry to find and fix spatial-reasoning failures in vision-language models.</p>
+						<p class="work">HandVQA · CVPR 2026</p>
+					</div>
+					<div class="theme">
+						<h3>Real-Time 3D Perception</h3>
+						<p>Fast 3D understanding, from hand-object pose to stereo depth.</p>
+						<p class="work">QORT-Former · AAAI 2025 / LIOPS</p>
+					</div>
+					<div class="theme">
+						<h3>3D Humans &amp; Avatars</h3>
+						<p>Animatable 3D Gaussian avatars from monocular video, even with partial body visibility.</p>
+						<p class="work">FlexiAvatar · ECCV 2026</p>
+					</div>
+				</div>
+				<p class="ahead"><b>Looking ahead:</b> I'm interested in human behavior foundation models that learn how people act and interact over time.</p>
+			</section>
 
-					<!-- Research themes -->
-					<section class="research-section">
-						<header class="major">
-							<h2>Research</h2>
-						</header>
-						<div class="card-grid themes-grid">
-							<article class="info-card theme-card">
-								<h3>Geometry-Grounded Multimodal Reasoning</h3>
-								<p>Using 3D geometry to find and fix spatial-reasoning failures in vision-language models.</p>
-								<p class="theme-work">HandVQA · CVPR 2026</p>
-							</article>
-							<article class="info-card theme-card">
-								<h3>Real-Time 3D Perception</h3>
-								<p>Fast 3D understanding, from hand-object pose to stereo depth.</p>
-								<p class="theme-work">QORT-Former · AAAI 2025 / LIOPS</p>
-							</article>
-							<article class="info-card theme-card">
-								<h3>3D Humans &amp; Avatars</h3>
-								<p>Animatable 3D Gaussian avatars from monocular video, even with partial body visibility.</p>
-								<p class="theme-work">FlexiAvatar · ECCV 2026</p>
-							</article>
-						</div>
-						<p class="section-note"><b>Looking ahead:</b> I'm interested in human behavior foundation models that learn how people act and interact over time.</p>
-					</section>
+			<section class="section" id="publications">
+				<h2>Publications</h2>
+				<p class="note">* equal contribution. Full list on <a href="https://scholar.google.com/citations?user=dVrnq4kAAAAJ&amp;hl">Google Scholar</a>.</p>
 
-					<!-- Publications -->
-					<section class="publications-section">
-						<header class="major">
-							<h2>Selected Publications</h2>
-						</header>
-						<p class="section-note section-lead">* equal contribution. Full list on <a href="https://scholar.google.com/citations?user=dVrnq4kAAAAJ&amp;hl">Google Scholar</a>.</p>
-						<div class="publication-list">
-							<article class="info-card publication-card">
-								<div class="publication-topline">
-									<p class="card-meta">CVPR 2026</p>
-									<span class="venue-badge">Denver, CO, USA</span>
-								</div>
-								<h3>HandVQA: Diagnosing and Improving Fine-Grained Spatial Reasoning about Hands in Vision-Language Models</h3>
-								<p class="publication-authors"><strong>MD Khalequzzaman Chowdhury Sayem*</strong>, Mubarrat Tajoar Chowdhury*, Yihalem Yimolal Tiruneh, Muneeb A. Khan, Muhammad Salman Ali, Binod Bhattarai, Seungryul Baek</p>
-								<div class="publication-layout">
-									<a href="materials/CVPR26/handvqa_teaser.png" class="publication-media">
-										<picture>
-											<source srcset="materials/CVPR26/handvqa_teaser.webp" type="image/webp" />
-											<img src="materials/CVPR26/handvqa_teaser.png" width="922" height="690" alt="HandVQA teaser image" loading="lazy" />
-										</picture>
-									</a>
-									<div class="publication-copy">
-										<p class="publication-tldr">A benchmark grounded in 3D hand geometry. We found that VLMs struggle with fine-grained spatial reasoning about hands, and that explicit 3D supervision helps considerably.</p>
-										<p>We introduce <b>HandVQA</b>, a large-scale benchmark with <b>1.6M+ geometry-derived VQA pairs</b> spanning joint angles, distances, and relative spatial relations (X/Y/Z). We find that explicit 3D supervision improves spatial reasoning and also transfers to gesture recognition and hand-object interaction tasks.</p>
-										<p class="card-links">
-											<a href="https://kcsayem.github.io/handvqa/">Project Page</a>
-											<a href="https://arxiv.org/pdf/2603.26362">Paper</a>
-											<a href="https://github.com/kcsayem/handvqa">Code</a>
-											<a href="https://huggingface.co/datasets/kcsayem/handvqa">Dataset</a>
-											<a href="materials/CVPR26/handvqa_presentation.pdf">Slides</a>
-										</p>
-										<details class="bibtex">
-											<summary>BibTeX</summary>
+				<article class="pub">
+					<a class="pub-media" href="materials/CVPR26/handvqa_teaser.png">
+						<picture>
+							<source srcset="materials/CVPR26/handvqa_teaser.webp" type="image/webp" />
+							<img src="materials/CVPR26/handvqa_teaser.png" width="922" height="690" alt="HandVQA teaser image" loading="lazy" />
+						</picture>
+					</a>
+					<div>
+						<h3><a href="https://kcsayem.github.io/handvqa/">HandVQA: Diagnosing and Improving Fine-Grained Spatial Reasoning about Hands in Vision-Language Models</a></h3>
+						<p class="authors"><strong>MD Khalequzzaman Chowdhury Sayem*</strong>, Mubarrat Tajoar Chowdhury*, Yihalem Yimolal Tiruneh, Muneeb A. Khan, Muhammad Salman Ali, Binod Bhattarai, Seungryul Baek</p>
+						<p class="venue"><b>CVPR 2026</b><span>Denver, CO, USA</span><span class="tag">Dataset released</span></p>
+						<p class="tldr">A benchmark grounded in 3D hand geometry. We found that VLMs struggle with fine-grained spatial reasoning about hands, and that explicit 3D supervision helps considerably.</p>
+						<p class="pub-links">
+							<a href="https://kcsayem.github.io/handvqa/">Project Page</a>
+							<a href="https://arxiv.org/pdf/2603.26362">Paper</a>
+							<a href="https://github.com/kcsayem/handvqa">Code</a>
+							<a href="https://huggingface.co/datasets/kcsayem/handvqa">Dataset</a>
+							<a href="materials/CVPR26/handvqa_presentation.pdf">Slides</a>
+						</p>
+						<div class="pub-extras">
+							<details>
+								<summary>Abstract</summary>
+								<p>We introduce HandVQA, a large-scale benchmark with 1.6M+ geometry-derived VQA pairs spanning joint angles, distances, and relative spatial relations (X/Y/Z). We find that explicit 3D supervision improves spatial reasoning and also transfers to gesture recognition and hand-object interaction tasks.</p>
+							</details>
+							<details>
+								<summary>BibTeX</summary>
 <pre>@inproceedings{sayem2026handvqa,
   title     = {HandVQA: Diagnosing and Improving Fine-Grained Spatial Reasoning about Hands in Vision-Language Models},
   author    = {Sayem, MD Khalequzzaman Chowdhury and Chowdhury, Mubarrat Tajoar and Tiruneh, Yihalem Yimolal and Khan, Muneeb A. and Ali, Muhammad Salman and Bhattarai, Binod and Baek, Seungryul},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year      = {2026}
 }</pre>
-										</details>
-									</div>
-								</div>
-							</article>
-							<article class="info-card publication-card">
-								<div class="publication-topline">
-									<p class="card-meta">ECCV 2026</p>
-									<span class="venue-badge">Malmö, Sweden</span>
-								</div>
-								<h3>FlexiAvatar: Unified 3D Gaussian Human Avatars Under Arbitrary Body Visibility</h3>
-								<p class="publication-authors">Yihalem Yimolal Tiruneh, Muhammad Salman Ali, Uyoung Jeong, Muneeb A. Khan, <strong>MD Khalequzzaman Chowdhury Sayem</strong>, Allanur Bayramgeldiyev, Binod Bhattarai, Seungryul Baek</p>
-								<div class="publication-layout">
-									<a href="https://yihalem1.github.io/FlexiAvatar/" class="publication-media">
-										<img src="https://yihalem1.github.io/FlexiAvatar/static/images/teaser.png" alt="FlexiAvatar results across full-body, upper-body, and head-only inputs" loading="lazy" />
-									</a>
-									<div class="publication-copy">
-										<p class="publication-tldr">A single avatar framework that works with full-body, upper-body, or head-only monocular video.</p>
-										<p><b>FlexiAvatar</b> is a visibility-aware framework for reconstructing animatable 3D Gaussian human avatars. It optimizes only visible body regions, combines occlusion-robust SMPL-X tracking with part-specific refinement and diffusion-based completion, and improves reconstruction quality while reducing runtime and memory overhead in partial-visibility settings.</p>
-										<p class="card-links">
-											<a href="https://yihalem1.github.io/FlexiAvatar/">Project Page</a>
-											<a href="https://arxiv.org/pdf/2607.19100">Paper</a>
-											<a href="https://github.com/yihalem1/FlexiAvatar_Release">Code</a>
-										</p>
-										<details class="bibtex">
-											<summary>BibTeX</summary>
+							</details>
+						</div>
+					</div>
+				</article>
+
+				<article class="pub">
+					<a class="pub-media" href="https://yihalem1.github.io/FlexiAvatar/">
+						<img src="https://yihalem1.github.io/FlexiAvatar/static/images/teaser.png" alt="FlexiAvatar results across full-body, upper-body, and head-only inputs" loading="lazy" />
+					</a>
+					<div>
+						<h3><a href="https://yihalem1.github.io/FlexiAvatar/">FlexiAvatar: Unified 3D Gaussian Human Avatars Under Arbitrary Body Visibility</a></h3>
+						<p class="authors">Yihalem Yimolal Tiruneh, Muhammad Salman Ali, Uyoung Jeong, Muneeb A. Khan, <strong>MD Khalequzzaman Chowdhury Sayem</strong>, Allanur Bayramgeldiyev, Binod Bhattarai, Seungryul Baek</p>
+						<p class="venue"><b>ECCV 2026</b><span>Malmö, Sweden</span></p>
+						<p class="tldr">A single avatar framework that works with full-body, upper-body, or head-only monocular video.</p>
+						<p class="pub-links">
+							<a href="https://yihalem1.github.io/FlexiAvatar/">Project Page</a>
+							<a href="https://arxiv.org/pdf/2607.19100">Paper</a>
+							<a href="https://github.com/yihalem1/FlexiAvatar_Release">Code</a>
+						</p>
+						<div class="pub-extras">
+							<details>
+								<summary>Abstract</summary>
+								<p>FlexiAvatar is a visibility-aware framework for reconstructing animatable 3D Gaussian human avatars. It optimizes only visible body regions, combines occlusion-robust SMPL-X tracking with part-specific refinement and diffusion-based completion, and improves reconstruction quality while reducing runtime and memory overhead in partial-visibility settings.</p>
+							</details>
+							<details>
+								<summary>BibTeX</summary>
 <pre>@inproceedings{tiruneh2026flexiavatar,
   title     = {FlexiAvatar: Unified 3D Gaussian Human Avatars Under Arbitrary Body Visibility},
   author    = {Tiruneh, Yihalem Yimolal and Ali, Muhammad Salman and Jeong, Uyoung and Khan, Muneeb A. and Sayem, MD Khalequzzaman Chowdhury and Bayramgeldiyev, Allanur and Bhattarai, Binod and Baek, Seungryul},
   booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
   year      = {2026}
 }</pre>
-										</details>
-									</div>
-								</div>
-							</article>
-							<article class="info-card publication-card">
-								<div class="publication-topline">
-									<p class="card-meta">AAAI 2025 <span class="author-role">Co-first author</span></p>
-									<span class="venue-badge">Philadelphia, PA, USA</span>
-								</div>
-								<h3>QORT-Former: Query-Optimized Real-Time Transformer for Understanding Two Hands Manipulating Objects</h3>
-								<p class="publication-authors">Elkhan Ismayilzada*, <strong>MD Khalequzzaman Chowdhury Sayem*</strong>, Yihalem Yimolal Tiruneh, Mubarrat Tajoar Chowdhury, Muhammadjon Boboev, Seungryul Baek</p>
-								<div class="publication-layout">
-									<a href="materials/aaai25/qortformer_teaser.png" class="publication-media">
-										<picture>
-											<source srcset="materials/aaai25/qortformer_teaser.webp" type="image/webp" />
-											<img src="materials/aaai25/qortformer_teaser.png" width="1800" height="1100" alt="QORT-Former teaser image" loading="lazy" />
-										</picture>
-									</a>
-									<div class="publication-copy">
-										<p class="publication-tldr">A real-time Transformer for estimating the 3D pose of two hands and a manipulated object.</p>
-										<p><b>QORT-Former</b> optimizes queries to balance efficiency and accuracy, leveraging hand-object contact information and a three-step feature update mechanism. It runs at <b>53.5 FPS</b> on an RTX 3090 Ti and improves over prior methods on the H2O and FPHA datasets.</p>
-										<p class="card-links">
-											<a href="https://kcsayem.github.io/QORT-Former/">Project Page</a>
-											<a href="https://arxiv.org/pdf/2502.19769">Paper</a>
-											<a href="https://github.com/kcsayem/QORT-Former">Code</a>
-											<a href="https://underline.io/lecture/113284-qort-former-query-optimized-real-time-transformer-for-understanding-two-hands-manipulating-objects">Video</a>
-											<a href="materials/aaai25/poster.pdf">Poster</a>
-										</p>
-										<details class="bibtex">
-											<summary>BibTeX</summary>
+							</details>
+						</div>
+					</div>
+				</article>
+
+				<article class="pub">
+					<a class="pub-media" href="materials/aaai25/qortformer_teaser.png">
+						<picture>
+							<source srcset="materials/aaai25/qortformer_teaser.webp" type="image/webp" />
+							<img src="materials/aaai25/qortformer_teaser.png" width="1800" height="1100" alt="QORT-Former teaser image" loading="lazy" />
+						</picture>
+					</a>
+					<div>
+						<h3><a href="https://kcsayem.github.io/QORT-Former/">QORT-Former: Query-Optimized Real-Time Transformer for Understanding Two Hands Manipulating Objects</a></h3>
+						<p class="authors">Elkhan Ismayilzada*, <strong>MD Khalequzzaman Chowdhury Sayem*</strong>, Yihalem Yimolal Tiruneh, Mubarrat Tajoar Chowdhury, Muhammadjon Boboev, Seungryul Baek</p>
+						<p class="venue"><b>AAAI 2025</b><span>Philadelphia, PA, USA</span><span class="tag">Co-first author</span></p>
+						<p class="tldr">A real-time Transformer for estimating the 3D pose of two hands and a manipulated object, running at 53.5 FPS.</p>
+						<p class="pub-links">
+							<a href="https://kcsayem.github.io/QORT-Former/">Project Page</a>
+							<a href="https://arxiv.org/pdf/2502.19769">Paper</a>
+							<a href="https://github.com/kcsayem/QORT-Former">Code</a>
+							<a href="https://underline.io/lecture/113284-qort-former-query-optimized-real-time-transformer-for-understanding-two-hands-manipulating-objects">Video</a>
+							<a href="materials/aaai25/poster.pdf">Poster</a>
+						</p>
+						<div class="pub-extras">
+							<details>
+								<summary>Abstract</summary>
+								<p>QORT-Former optimizes queries to balance efficiency and accuracy, leveraging hand-object contact information and a three-step feature update mechanism. It runs at 53.5 FPS on an RTX 3090 Ti and improves over prior methods on the H2O and FPHA datasets.</p>
+							</details>
+							<details>
+								<summary>BibTeX</summary>
 <pre>@inproceedings{ismayilzada2025qortformer,
   title     = {QORT-Former: Query-Optimized Real-Time Transformer for Understanding Two Hands Manipulating Objects},
   author    = {Ismayilzada, Elkhan and Sayem, MD Khalequzzaman Chowdhury and Tiruneh, Yihalem Yimolal and Chowdhury, Mubarrat Tajoar and Boboev, Muhammadjon and Baek, Seungryul},
   booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
   year      = {2025}
 }</pre>
-										</details>
-									</div>
-								</div>
-							</article>
+							</details>
 						</div>
-					</section>
+					</div>
+				</article>
+			</section>
 
-					<!-- Open-source work -->
-					<section class="artifacts-section">
-						<header class="major">
-							<h2>Datasets &amp; Code</h2>
-						</header>
-						<div class="card-grid news-grid">
-							<article class="info-card">
-								<p class="card-meta">Dataset · Benchmark</p>
-								<h3>HandVQA</h3>
-								<p>1.6M+ geometry-derived VQA pairs for evaluating and training fine-grained spatial reasoning about hands in vision-language models.</p>
-								<p class="card-links">
-									<a href="https://huggingface.co/datasets/kcsayem/handvqa">Hugging Face</a>
-									<a href="https://github.com/kcsayem/handvqa">Code</a>
-								</p>
-							</article>
-							<article class="info-card">
-								<p class="card-meta">Code · Model</p>
-								<h3>QORT-Former</h3>
-								<p>Real-time Transformer for 3D pose estimation of two hands and a manipulated object, with training and evaluation code.</p>
-								<p class="card-links">
-									<a href="https://github.com/kcsayem/QORT-Former">Code</a>
-									<a href="https://kcsayem.github.io/QORT-Former/">Project Page</a>
-								</p>
-							</article>
-							<!-- TODO: add an interactive demo (e.g. a Hugging Face Space) -->
+			<section class="section" id="experience">
+				<h2>Experience &amp; Education</h2>
+				<ul class="timeline">
+					<li>
+						<span class="date">2026 – now</span>
+						<div>
+							<h3>3D AI Engineer · <a href="https://www.liops.io/">LIOPS</a></h3>
+							<p>Stereo depth estimation for 3D AI and vision systems.</p>
 						</div>
-					</section>
-
-					<!-- Experience -->
-					<section class="experience-section">
-						<header class="major">
-							<h2>Experience &amp; Education</h2>
-						</header>
-						<ul class="timeline">
-							<li>
-								<span class="timeline-date">2026 – present</span>
-								<div>
-									<h3>3D AI Engineer · <a href="https://www.liops.io/">LIOPS</a></h3>
-									<p>Stereo depth estimation for 3D AI and vision systems.</p>
-								</div>
-							</li>
-							<li>
-								<span class="timeline-date">2025 – 2026</span>
-								<div>
-									<h3>Researcher · Vision &amp; Learning Lab, <a href="https://unist.ac.kr">UNIST</a></h3>
-									<p>Grounded multimodal reasoning and 3D human understanding (HandVQA, FlexiAvatar).</p>
-								</div>
-							</li>
-							<li>
-								<span class="timeline-date">2023 – 2025</span>
-								<div>
-									<h3>M.S. in Computer Science and Engineering · <a href="https://unist.ac.kr">UNIST</a></h3>
-									<p>Advised by Prof. Seungryul Baek and Prof. Binod Bhattarai. <a href="materials/MS_thesis/HandVQA.pdf">Thesis (PDF)</a></p>
-								</div>
-							</li>
-							<li>
-								<span class="timeline-date">2019 – 2023</span>
-								<div>
-									<h3>B.S. in Industrial Engineering · <a href="https://unist.ac.kr">UNIST</a></h3>
-									<p>Undergraduate research in the Vision &amp; Learning Lab and the Machine Learning &amp; Vision Lab.</p>
-								</div>
-							</li>
-						</ul>
-					</section>
-
-					<!-- Talks -->
-					<section class="talks-section">
-						<header class="major">
-							<h2>Presentation Materials</h2>
-						</header>
-						<p class="section-note section-lead">Slides, posters, and recorded presentations for my papers.</p>
-						<ul class="timeline">
-							<li>
-								<span class="timeline-date">2026</span>
-								<div>
-									<h3>HandVQA</h3>
-									<p>Paper at CVPR 2026 · <a href="materials/CVPR26/handvqa_presentation.pdf">Slides</a></p>
-								</div>
-							</li>
-							<li>
-								<span class="timeline-date">2025</span>
-								<div>
-									<h3>QORT-Former</h3>
-									<p>Paper at AAAI 2025 · <a href="https://underline.io/lecture/113284-qort-former-query-optimized-real-time-transformer-for-understanding-two-hands-manipulating-objects">Recorded presentation</a> · <a href="materials/aaai25/poster.pdf">Poster</a></p>
-								</div>
-							</li>
-						</ul>
-						<!-- TODO: add a "Service" section (reviewing for CVPR / ECCV / NeurIPS, etc.) -->
-					</section>
-
-					<!-- News -->
-					<section class="news-section">
-						<header class="major">
-							<h2>News</h2>
-						</header>
-						<div class="card-grid news-grid">
-							<article class="info-card news-card">
-								<div class="publication-topline">
-									<p class="card-meta">June 2026</p>
-									<span class="venue-badge">ECCV 2026</span>
-								</div>
-								<h3>FlexiAvatar Accepted</h3>
-								<p>Our collaborative work on visibility-aware 3D Gaussian human avatar reconstruction has been accepted to ECCV 2026.</p>
-								<p class="card-links"><a href="https://yihalem1.github.io/FlexiAvatar/">Project Page</a></p>
-							</article>
-							<article class="info-card news-card">
-								<p class="card-meta">May 2026</p>
-								<h3>Joined LIOPS</h3>
-								<p>Started as a 3D AI Engineer at LIOPS, working on stereo depth estimation.</p>
-							</article>
-							<article class="info-card news-card">
-								<p class="card-meta">March 2026</p>
-								<h3>HandVQA on arXiv</h3>
-								<p>Our HandVQA paper is now available on arXiv.</p>
-								<p class="card-links"><a href="https://arxiv.org/pdf/2603.26362">Read the preprint</a></p>
-							</article>
-							<article class="info-card news-card">
-								<div class="publication-topline">
-									<p class="card-meta">February 2026</p>
-									<span class="venue-badge">CVPR 2026</span>
-								</div>
-								<h3>HandVQA Accepted</h3>
-								<p>Our paper on diagnosing and improving fine-grained spatial reasoning about hands in vision-language models has been accepted to CVPR 2026.</p>
-							</article>
+					</li>
+					<li>
+						<span class="date">2025 – 2026</span>
+						<div>
+							<h3>Researcher · Vision &amp; Learning Lab, <a href="https://unist.ac.kr">UNIST</a></h3>
+							<p>Grounded multimodal reasoning and 3D human understanding (HandVQA, FlexiAvatar).</p>
 						</div>
-						<details class="older-news">
-							<summary>Older news</summary>
-							<ul class="timeline">
-								<li>
-									<span class="timeline-date">Sep 2025</span>
-									<div><p>Joined the UNIST Vision &amp; Learning Lab as a Researcher.</p></div>
-								</li>
-								<li>
-									<span class="timeline-date">Aug 2025</span>
-									<div><p>Defended my master's thesis and graduated from UNIST.</p></div>
-								</li>
-								<li>
-									<span class="timeline-date">2025</span>
-									<div><p>QORT-Former accepted to AAAI 2025. <a href="materials/aaai25/poster.pdf">Poster</a></p></div>
-								</li>
-							</ul>
-						</details>
-					</section>
+					</li>
+					<li>
+						<span class="date">2023 – 2025</span>
+						<div>
+							<h3>M.S. in Computer Science and Engineering · <a href="https://unist.ac.kr">UNIST</a></h3>
+							<p>Advised by Prof. Seungryul Baek and Prof. Binod Bhattarai. <a href="materials/MS_thesis/HandVQA.pdf">Thesis (PDF)</a></p>
+						</div>
+					</li>
+					<li>
+						<span class="date">2019 – 2023</span>
+						<div>
+							<h3>B.S. in Industrial Engineering · <a href="https://unist.ac.kr">UNIST</a></h3>
+							<p>Undergraduate research in the Vision &amp; Learning Lab and the Machine Learning &amp; Vision Lab.</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</main>
 
-					<footer class="site-footer">
-						<p>© 2026 MD Khalequzzaman Chowdhury Sayem · Last updated September 2026 · Design based on <a href="https://html5up.net/editorial">Editorial by HTML5 UP</a></p>
-					</footer>
-
-				</div>
-			</div>
-		</div>
+		<footer class="footer">
+			<div class="wrap">© 2026 MD Khalequzzaman Chowdhury Sayem · Last updated September 2026</div>
+		</footer>
 
 		<script src="assets/js/theme-toggle.js"></script>
 		<div id="mapmyvisitors-container" style="display:none;" aria-hidden="true">

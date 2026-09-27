@@ -6,18 +6,15 @@
 	if (!button) return;
 
 	function applyTheme(theme) {
-		var isDark = theme === 'dark';
 		root.setAttribute('data-theme', theme);
-		button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
-		button.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-		button.querySelector('.theme-toggle-text').textContent = isDark ? 'Light mode' : 'Dark mode';
+		button.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
 	}
 
-	applyTheme(root.getAttribute('data-theme') || 'dark');
+	applyTheme(root.getAttribute('data-theme') || 'light');
 
 	button.addEventListener('click', function() {
 		var nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-		localStorage.setItem('theme', nextTheme);
+		try { localStorage.setItem('theme', nextTheme); } catch (e) {}
 		applyTheme(nextTheme);
 	});
 })();

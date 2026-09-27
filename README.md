@@ -90,14 +90,11 @@ Source for [kcsayem.github.io](https://kcsayem.github.io/), served by GitHub Pag
 
 ```
 index.html          homepage
-assets/css/         stylesheets (main.css, Font Awesome)
+assets/css/         stylesheet (site.css)
 assets/js/          site scripts (theme, analytics)
-assets/webfonts/    Font Awesome webfonts
 cv/                 CV (PDF)
 images/             profile photo
 materials/          papers, posters, slides, teasers
 ```
 
 Old template pages and unused assets are kept on the `archive` branch.
-
-Design based on [Editorial by HTML5 UP](https://html5up.net/editorial), licensed under [CC BY 3.0](https://html5up.net/license).
