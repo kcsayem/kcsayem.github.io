@@ -3338,7 +3338,14 @@ html[data-theme="dark"] .publication-media img {
 
 .section-lead {
   font-size: 0.95rem;
-  margin: -0.4rem 0 1.2rem 0;
+  margin: 0 0 1.2rem 0;
+}
+
+.research-section .major,
+.artifacts-section .major,
+.experience-section .major,
+.talks-section .major {
+  margin-bottom: 1.4rem;
 }
 
 .research-section,
@@ -3463,4 +3470,8 @@ details.bibtex pre {
     gap: 0.25rem;
     grid-template-columns: minmax(0, 1fr);
   }
+}
+
+.news-card .publication-topline {
+  margin-bottom: 0.65rem;
 }
