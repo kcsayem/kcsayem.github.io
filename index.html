@@ -98,7 +98,13 @@
 			<div class="wrap">
 			<section class="intro">
 				<div>
-					<h1>MD Khalequzzaman Chowdhury Sayem</h1>
+					<div class="name-row">
+						<picture class="avatar">
+							<source srcset="images/img/profile/profile_1.webp" type="image/webp" />
+							<img src="images/img/profile/profile_1.jpg" width="800" height="1079" alt="Portrait of MD Khalequzzaman Chowdhury Sayem" />
+						</picture>
+						<h1>MD Khalequzzaman Chowdhury Sayem</h1>
+					</div>
 					<p class="statement">I work on 3D-aware vision and multimodal models that try to understand people: how their hands and bodies move, how they interact with objects, and how they behave over time.</p>
 					<ul class="roles">
 						<li><strong>3D AI Engineer</strong> at <a href="https://www.liops.io/">LIOPS</a>, working on stereo depth estimation</li>
@@ -115,12 +121,39 @@
 						<!-- TODO: add OpenReview and ORCID profile links -->
 					</ul>
 				</div>
-				<div class="portrait">
-					<picture>
-						<source srcset="images/img/profile/profile_1.webp" type="image/webp" />
-						<img src="images/img/profile/profile_1.jpg" width="800" height="1079" alt="Portrait of MD Khalequzzaman Chowdhury Sayem" />
-					</picture>
-				</div>
+				<aside class="featured" aria-label="Selected work">
+					<p class="featured-label">Selected work</p>
+					<a class="feat" href="#pub-handvqa">
+						<picture>
+							<source srcset="materials/CVPR26/handvqa_teaser.webp" type="image/webp" />
+							<img src="materials/CVPR26/handvqa_teaser.png" alt="" loading="lazy" />
+						</picture>
+						<span>
+							<b>HandVQA</b>
+							<em>CVPR 2026</em>
+							<small>Where VLMs fail at spatial reasoning about hands, and how 3D supervision helps.</small>
+						</span>
+					</a>
+					<a class="feat" href="#pub-flexiavatar">
+						<img src="https://yihalem1.github.io/FlexiAvatar/static/images/teaser.png" alt="" loading="lazy" />
+						<span>
+							<b>FlexiAvatar</b>
+							<em>ECCV 2026</em>
+							<small>3D Gaussian human avatars from partially visible monocular video.</small>
+						</span>
+					</a>
+					<a class="feat" href="#pub-qortformer">
+						<picture>
+							<source srcset="materials/aaai25/qortformer_teaser.webp" type="image/webp" />
+							<img src="materials/aaai25/qortformer_teaser.png" alt="" loading="lazy" />
+						</picture>
+						<span>
+							<b>QORT-Former</b>
+							<em>AAAI 2025</em>
+							<small>Real-time 3D pose of two hands and an object at 53.5 FPS.</small>
+						</span>
+					</a>
+				</aside>
 			</section>
 			</div>
 		</div>
@@ -173,7 +206,7 @@
 				<h2>Publications</h2>
 				<p class="note">* equal contribution. Full list on <a href="https://scholar.google.com/citations?user=dVrnq4kAAAAJ&amp;hl">Google Scholar</a>.</p>
 
-				<article class="pub">
+				<article class="pub" id="pub-handvqa">
 					<a class="pub-media" href="materials/CVPR26/handvqa_teaser.png">
 						<picture>
 							<source srcset="materials/CVPR26/handvqa_teaser.webp" type="image/webp" />
@@ -210,7 +243,7 @@
 					</div>
 				</article>
 
-				<article class="pub">
+				<article class="pub" id="pub-flexiavatar">
 					<a class="pub-media" href="https://yihalem1.github.io/FlexiAvatar/">
 						<img src="https://yihalem1.github.io/FlexiAvatar/static/images/teaser.png" alt="FlexiAvatar results across full-body, upper-body, and head-only inputs" loading="lazy" />
 					</a>
@@ -242,7 +275,7 @@
 					</div>
 				</article>
 
-				<article class="pub">
+				<article class="pub" id="pub-qortformer">
 					<a class="pub-media" href="materials/aaai25/qortformer_teaser.png">
 						<picture>
 							<source srcset="materials/aaai25/qortformer_teaser.webp" type="image/webp" />
