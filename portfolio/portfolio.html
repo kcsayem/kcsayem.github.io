@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MD Khalequzzaman Chowdhury Sayem - Research Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center mb-4 md:mb-0">
+        <h1 class="text-2xl font-bold text-red-600 mr-6">MD Khalequzzaman Chowdhury Sayem</h1>
+        <ul class="flex space-x-4">
+          <li><a href="https://github.com/kcsayem" class="text-gray-600 hover:text-red-600"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/kcsayem/" class="text-gray-600 hover:text-red-600"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="mailto:khalequzzamansayem@unist.ac.kr" class="text-gray-600 hover:text-red-600"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="text-gray-600 font-medium pb-1">Home</a></li>
+          <li><a href="#qort-former" class="text-gray-600 font-medium pb-1">QORT-Former</a></li>
+          <li><a href="#handvqa" class="text-gray-600 font-medium pb-1">HandVQA</a></li>
+          <li><a href="#4d-instruct-gs2gs" class="text-gray-600 font-medium pb-1">4D Instruct-GS2GS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-12">
+
+    <section id="home" class="mb-16 pt-16 -mt-16">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-red-600 mb-4">Research Portfolio</h2>
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+          Welcome! This portfolio highlights my key contributions in Computer Vision and AI, focusing on 3D hand/object pose estimation, spatial reasoning in VLMs, and dynamic scene editing.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold text-red-600 mb-3">QORT-Former</h3>
+          <p class="text-gray-700 mb-4">A real-time Transformer for understanding two hands manipulating objects. (AAAI-25)</p>
+          <a href="#qort-former" class="text-sm text-white bg-red-600 hover:bg-red-700 py-2 px-4 rounded">Learn More &rarr;</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold text-red-600 mb-3">HandVQA</h3>
+          <p class="text-gray-700 mb-4">Diagnosing fine-grained spatial reasoning failures in Vision-Language Models. (Master's Thesis)</p>
+          <a href="#handvqa" class="text-sm text-white bg-red-600 hover:bg-red-700 py-2 px-4 rounded">Learn More &rarr;</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-2xl font-semibold text-red-600 mb-3">4D Instruct-GS2GS</h3>
+          <p class="text-gray-700 mb-4">Editing 4D Gaussian Splats with text instructions. (Class Project)</p>
+          <a href="#4d-instruct-gs2gs" class="text-sm text-white bg-red-600 hover:bg-red-700 py-2 px-4 rounded">Learn More &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="qort-former" class="mb-16 pt-20 -mt-16 bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold text-red-600 mb-4">1. QORT-Former</h2>
+      <p class="text-gray-700 mb-6">QORT-Former is the first Transformer-based real-time framework for estimating 3D poses of two hands and an object. It introduces query-division, contact integration, and a three-step decoder update to achieve 53.5 FPS and state-of-the-art accuracy on H2O and FPHA datasets.</p>
+      <img src="assets/qort_fps_vs_mepe.png" alt="QORT-Former FPS vs MEPE" class="w-full rounded mb-4" />
+      <p class="text-gray-500 text-sm text-center mb-8"><em>Figure: FPS vs Error trade-off on H2O. QORT-Former achieves both real-time speed and top-tier accuracy.</em></p>
+    </section>
+
+    <section id="handvqa" class="mb-16 pt-20 -mt-16 bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold text-red-600 mb-4">2. HandVQA</h2>
+      <p class="text-gray-700 mb-6">HandVQA is a large-scale benchmark for diagnosing spatial reasoning failures in VLMs using fine-grained hand pose questions. It includes over 1.6M multiple-choice questions across five reasoning categories: angles, distances, and relative positions in 3D.</p>
+      <img src="assets/handvqa_accuracy_chart.png" alt="HandVQA Accuracy" class="w-full rounded mb-4" />
+      <p class="text-gray-500 text-sm text-center mb-8"><em>Figure: Accuracy comparison of VLMs on HandVQA before and after fine-tuning.</em></p>
+    </section>
+
+    <section id="4d-instruct-gs2gs" class="mb-16 pt-20 -mt-16 bg-white p-8 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold text-red-600 mb-4">3. 4D Instruct-GS2GS</h2>
+      <p class="text-gray-700 mb-6">4D Instruct-GS2GS extends Instruct-GS2GS to dynamic scenes. It enables real-time semantic editing of 4D Gaussian Splats using natural language prompts, preserving temporal and spatial consistency through iterative dataset updates and contact-aware query refinements.</p>
+      <img src="assets/4d_edit_results.png" alt="4D Instruct-GS2GS Edits" class="w-full rounded mb-4" />
+      <p class="text-gray-500 text-sm text-center mb-8"><em>Figure: Visual results showing semantic scene edits over time using 4D Instruct-GS2GS.</em></p>
+    </section>
+
+    <section id="overall-conclusion" class="text-center py-12 bg-red-700 text-white rounded-lg">
+      <h2 class="text-3xl font-bold mb-4">Concluding Remarks</h2>
+      <p class="text-lg max-w-3xl mx-auto leading-relaxed px-6">
+        My research focuses on advancing computer vision and AI by building systems that robustly perceive and interact with visual data. From real-time pose estimation to dynamic scene editing, my goal is to push toward more intelligent, practical systems.
+      </p>
+    </section>
+  </main>
+
+  <footer class="bg-gray-100 text-gray-600 py-8 text-center">
+    <p>&copy; 2025 MD Khalequzzaman Chowdhury Sayem. All rights reserved.</p>
+    <p class="text-sm">Portfolio SPA generated based on provided research summaries.</p>
+  </footer>
+
+</body>
+</html>
