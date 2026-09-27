@@ -3475,3 +3475,12 @@ details.bibtex pre {
 .news-card .publication-topline {
   margin-bottom: 0.65rem;
 }
+
+.theme-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-card .theme-work {
+  margin-top: auto;
+}
