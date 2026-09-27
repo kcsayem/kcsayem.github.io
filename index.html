@@ -17,16 +17,6 @@
 		<meta name="twitter:title" content="MD Khalequzzaman Chowdhury Sayem | 3D AI Engineer &amp; Researcher">
 		<meta name="twitter:description" content="3D AI Engineer at LIOPS working on stereo depth estimation, and researcher in geometry-grounded multimodal reasoning.">
 		<meta name="twitter:image" content="https://kcsayem.github.io/images/img/profile/profile_1.jpg">
-		<!-- optionally -->
-		<!-- <meta property="og:image" content="https://kcsayem.github.io/images/img/profile/profile_1.jpg"> -->
-
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-56PDBT25');</script>
-		<!-- End Google Tag Manager -->
 		<title>Sayem's Personal Homepage</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -35,21 +25,10 @@
 		<meta name="theme-color" content="#0b1220" />
 		<link rel="stylesheet" href="assets/css/main.css?v=20260320c" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-		<script>
-		(function() {
-			var savedTheme = localStorage.getItem('theme');
-			document.documentElement.setAttribute('data-theme', savedTheme || 'dark');
-		})();
-		</script>
+		<script src="assets/js/theme-init.js"></script>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMPVV9B3X3"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-EMPVV9B3X3');
-		</script>
+		<script src="assets/js/analytics.js"></script>
 		<meta name="google-site-verification" content="Pgv_cK-ieOdvP0CA3ezkyCboghQPBdjWBoshO9xs8Kg" />
 			<script type="application/ld+json">
 		{
@@ -278,30 +257,7 @@
 			</div>
 		</div>
 
-		<script>
-			(function() {
-				var root = document.documentElement;
-				var button = document.getElementById('theme-toggle');
-
-				if (!button) return;
-
-				function applyTheme(theme) {
-					var isDark = theme === 'dark';
-					root.setAttribute('data-theme', theme);
-					button.setAttribute('aria-pressed', isDark ? 'true' : 'false');
-					button.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-					button.querySelector('.theme-toggle-text').textContent = isDark ? 'Light mode' : 'Dark mode';
-				}
-
-				applyTheme(root.getAttribute('data-theme') || 'dark');
-
-				button.addEventListener('click', function() {
-					var nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-					localStorage.setItem('theme', nextTheme);
-					applyTheme(nextTheme);
-				});
-			})();
-		</script>
+		<script src="assets/js/theme-toggle.js"></script>
 		<div id="mapmyvisitors-container" style="display:none;" aria-hidden="true">
 			<a href="https://mapmyvisitors.com/web/1c7ew" title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=VWaOb1E9OEZXprRVe5Kv-kwImGjEGar-dw1HUroBvEQ&amp;cl=ffffff" alt="" /></a>
 		</div>

@@ -81,3 +81,23 @@ I am always open to research discussions, collaborations, and exciting ideas in 
 - Google Scholar: [Profile](https://scholar.google.com/citations?user=dVrnq4kAAAAJ&hl)
 - LinkedIn: [kcsayem](https://www.linkedin.com/in/kcsayem/)
 - Email: [khalequzzamansayem@gmail.com](mailto:khalequzzamansayem@gmail.com)
+
+---
+
+## About This Repository
+
+Source for [kcsayem.github.io](https://kcsayem.github.io/), served by GitHub Pages.
+
+```
+index.html          homepage
+assets/css/         stylesheets (main.css, Font Awesome)
+assets/js/          site scripts (theme, analytics)
+assets/webfonts/    Font Awesome webfonts
+cv/                 CV (PDF)
+images/             profile photo
+materials/          papers, posters, slides, teasers
+```
+
+Old template pages and unused assets are kept on the `archive` branch.
+
+Design based on [Editorial by HTML5 UP](https://html5up.net/editorial), licensed under [CC BY 3.0](https://html5up.net/license).
